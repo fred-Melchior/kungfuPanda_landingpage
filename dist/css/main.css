@@ -1,1 +1,1 @@
-body{background-color:#000}
+@font-face{font-family:Kung Fu Panda;src:url(../../assets/Kung\ Fu\ Panda.woff)}*{padding:0;margin:0;box-sizing:border-box;background-color:#a61f2b;font-family:Kung Fu Panda}.title--big{font-size:40px;color:#c29336}.title{font-size:32px;color:#c29336}.title--small{font-size:24px;color:#c29336}.text--big{font-size:24px;color:#f2f3f4}.text{font-size:16px;color:#f2f3f4}.text--small{font-size:8px;color:#f2f3f4}

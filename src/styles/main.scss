@@ -1,4 +1,5 @@
 @use 'var';
+@use 'hero';
 
 @font-face {
     font-family: Kung Fu Panda;
@@ -9,7 +10,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: var.$red;
     font-family: Kung Fu Panda;
 }
 
@@ -31,16 +31,32 @@
 .text--big{
     font-size: 24px;
     color: var.$corLight;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 
 .text{
     font-size: 16px;
     color: var.$corLight;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 
 .text--small{
     font-size: 8px;
     color: var.$corLight;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button{
+    text-decoration: none;
+    color: var.$corLight;
+    background-color: var.$brownDark;
+    padding: 8px;
+    border-radius: 4px;
+    &:hover{
+        padding: 12px;
+        background-color: var.$red;
+        border: 1px solid var.$corDark;
+    }
 }

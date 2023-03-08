@@ -1,0 +1,28 @@
+@use 'var';
+
+.hero{
+    padding: 5.6vw;
+    height: 640px;
+    text-align: center;
+    background-image: url(https://wallpaperaccess.com/full/1309211.jpg);
+    background-size: cover;
+    
+    &__container{
+        margin: 40px 0;
+        width: 480px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        padding: 16px;
+        background-color: rgba($color: var.$red, $alpha: .3);
+        .text{
+            margin: 64px 0;
+            padding: 16px;
+            font-style: italic;
+        }
+        .button{
+            margin: 0 16px;
+        }
+    }
+}

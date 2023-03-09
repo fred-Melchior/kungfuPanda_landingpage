@@ -1,0 +1,53 @@
+@use 'var';
+
+.game{
+    padding: 5.6vw;
+    height: 640px;
+    background-image: linear-gradient(var.$corDark, var.$brownDark,  var.$red);
+    display: flex;
+    justify-content: space-between;
+
+    &__container1{
+    width: 50%;
+    text-align: center;
+
+        h2{
+            margin-bottom: 32px;
+        }
+        img{
+            width: 400px;
+            border-radius: 8px;
+            &:hover{
+                width: calc(400px + 5%);
+            }
+        }
+    }
+
+    &__container2{
+        width: 50%;
+        display: block;
+        text-align: center;
+
+        p{
+            margin: 32px 32px 40px;
+        }
+
+        img{
+            width: 320px;
+            border-radius: 8px;
+            margin: 32px;
+            &:hover{
+                width: calc(320px + 5%);
+            }
+        }
+
+        .button{
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            &:hover{
+                border: 1px solid var.$corLight;
+            }
+        }
+    }
+}

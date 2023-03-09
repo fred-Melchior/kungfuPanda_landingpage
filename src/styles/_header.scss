@@ -1,0 +1,23 @@
+@use 'var';
+
+.header{
+    padding: 24px 5.6vw;
+    background-image: linear-gradient(to right, var.$brownDark, var.$corDark);
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    transition: all ease .5s;
+
+    &--is-hidden{
+        background-color: transparent;
+        background-image: none;
+        transition: ease .5s;
+
+        .button{
+            background-color: var.$red;
+        }
+    }
+}

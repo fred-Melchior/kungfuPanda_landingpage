@@ -6,10 +6,19 @@
     background-image: linear-gradient(var.$corDark, var.$brownDark,  var.$red);
     display: flex;
     justify-content: space-between;
+    @media (max-width: 767px) {
+        width: 100%;
+        display: block;
+        align-items:center ;        
+    }
 
     &__container1{
     width: 50%;
     text-align: center;
+    @media (max-width: 767px) {
+        display: block;
+        width: 100%;        
+    }
 
         h2{
             margin-bottom: 32px;
@@ -20,6 +29,9 @@
             &:hover{
                 width: calc(400px + 5%);
             }
+            @media (max-width: 767px) {
+                max-width: 50%;
+            }
         }
     }
 
@@ -27,9 +39,16 @@
         width: 50%;
         display: block;
         text-align: center;
+        @media (max-width: 767px) {
+            display: block;
+            width: 100%;    
+        }
 
         p{
             margin: 32px 32px 40px;
+            @media (max-width: 767px) {
+                margin: 16px auto;
+            }
         }
 
         img{
@@ -39,6 +58,9 @@
             &:hover{
                 width: calc(320px + 5%);
             }
+            @media (max-width: 767px) {
+                margin: 24px auto;
+            }
         }
 
         .button{
@@ -47,6 +69,9 @@
             width: 50%;
             &:hover{
                 border: 1px solid var.$corLight;
+            }
+            @media (max-width: 767px) {
+                margin: 0 auto 16px;
             }
         }
     }

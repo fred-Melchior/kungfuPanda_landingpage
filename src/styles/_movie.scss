@@ -9,6 +9,11 @@
     display: flex;
     justify-content: end;
     align-items: baseline;
+    @media (max-width: 767px) {
+        width: 100%;
+        background-position: center;
+        display: block;        
+    }
 
     &__container{
         width: 50%;
@@ -16,6 +21,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @media (max-width: 767px) {
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
 
         p{
             margin: 24px 0 380px;

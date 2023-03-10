@@ -6,6 +6,12 @@
     text-align: center;
     background-image: url(https://wallpaperaccess.com/full/1309211.jpg);
     background-size: cover;
+    @media (max-width: 767px) {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+    }
     
     &__container{
         margin: 40px 0;
@@ -16,6 +22,11 @@
         border-radius: 8px;
         padding: 16px;
         background-color: rgba($color: var.$red, $alpha: .3);
+
+        @media (max-width: 767px) {
+            width: 100%;
+            margin: 24px 0;
+        }
         .text{
             margin: 64px 0;
             padding: 16px;
@@ -23,6 +34,12 @@
         }
         .button{
             margin: 0 16px;
+
+            @media (max-width: 767px) {
+                display: block;
+                margin: 40px 16px;
+                
+            }
         }
     }
 }

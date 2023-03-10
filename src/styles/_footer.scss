@@ -1,0 +1,23 @@
+@use 'var';
+
+.footer{
+    padding: 0 3vw;
+    text-align: center;
+    background-image: linear-gradient(var.$brownLight, var.$red);
+
+    &__links{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        padding: 32px 80px;
+
+        &__item{
+            text-decoration: none;
+            font-size: 16px;
+        }
+    }
+
+    .text--small{
+        color: var.$corDark
+    }
+}
